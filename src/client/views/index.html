@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Travel Planner</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                planifiez votre voyage 
+            </h1>
+            <span>We will do the homework for your travell . . .</span>
+        </header> 
+        <nav>
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    planner
+                </li>
+                <li>
+                    About
+                </li>
+            </ul>
+        </nav>
+        <div class="form" id="form">
+            <div>
+            <h1>Your travel details</h1>
+            <form onsubmit="client.clickHandler(event)">
+                <span>You are going to <input type="text" placeholder="Destination" spellcheck="false" id="dest"></span>
+                <span>Departing <input type="date" id="date"></span>
+                <input type="submit" value="Get Details" id="button">
+            </form>
+            </div>
+        </div>
+        <div class="res invisible" id="res">
+            <div class="content">
+                <h3>Trip Details</h3>
+                <span id="img"></span>
+                <p>Going to:<span id="destination"></span><br/>Days Left for trip:<span id="days"></span></p>
+                <div class="weather_details">
+                    <span id="temp"></span>
+                    <span id="detail"></span>
+                </div>
+            </div>
+            <button id="delete" onclick="client.del()">Delete</button>
+            </div>
+        </div>
+        <footer>
+            <span>Images by:<a href="https://www.freepik.com/free-photos-vectors/mockup" target="_.">www.freepik.com</a></span>
+            <span>Copyright &copy <strong>Tush-aar inc.</strong></span>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+.form{
+    height: 97vh;
+    margin-top: 2.25%;
+    text-align: center;
+    background-image: url('../assets/pack.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FDBA4C;
+    div{
+        margin: -2%;
+        padding: 50px 0 100px 0;
+        display: grid;
+        grid-gap: 50px;
+        font-family: 'Pangolin', cursive;
+        h1{
+            word-spacing: 5px;
+            letter-spacing: 2px;
+            font-size: 3em;
+            text-transform: uppercase;
+            color: #33477F;
+            text-decoration: underline;
+        }
+        form{
+            display: grid;
+            grid-gap: 25px;
+            justify-items: center;
+            span{
+                color: #fc4204;
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            span input{
+                margin-left: 25px;
+                background: transparent;
+                width: 25em;
+                outline: none;
+                border: 0;
+                padding: 8px;
+                border-bottom: 1px solid #fc8210;
+                border-radius: 8px;
+                color: #33477F;
+                font-family: 'Pangolin', cursive;
+                font-weight: bold;
+                word-spacing: 5px;
+                letter-spacing: 2px;
+                font-size: 20px;
+                text-transform: uppercase;
+                &:hover{
+                    background-color: rgb(238, 171, 63);
+                }
+            }
+            #button{
+                border: 2px solid rgb(137, 150, 185);
+                padding: 10px 25px 10px 25px;
+                background: transparent;
+                font-family: 'Pangolin', cursive;
+                font-weight: bold;
+                letter-spacing: 3px;
+                font-size: 14px;
+                margin-right: 28px;
+                color: #33477F;
+                transition-duration: 0.3s;
+                &:hover{
+                    border-color: #33477F;
+                    color: rgb(137, 150, 185);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1025px){
+    .form{
+        height: 50vh;
+        div{
+            padding: 50px 0 50px 0;
+            grid-gap: 40px;
+            margin-left: 4%;
+            h1{
+                font-size: 1em;
+            }
+            form{
+                grid-gap: 15px;
+                span{
+                    font-size: 18px;
+                }
+                span input{
+                    width: 15em;
+                }
+            }
+        }
+    }
+}

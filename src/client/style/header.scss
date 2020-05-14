@@ -1,0 +1,36 @@
+header{
+    height: 55vh;
+    padding: 15% 0 0 0;
+    text-align: center;
+    background-image: url('../assets/travel.jpg');
+    background-size: cover;
+    color: #035aa6;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    h1{
+        font-family: 'DM Mono', monospace;
+        text-transform: uppercase;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        font-size: 3em;
+    }
+    span{
+        font-family: 'Raleway', sans-serif;
+        word-spacing: 5px;
+        font-weight: bold;
+    }
+}
+
+
+@media(max-width:1025px) and (min-width:500px){
+    header{
+        height: 30vh;
+        background-size: contain;
+        h1{
+            font-size: 1.5em;
+        }
+        span{
+            font-size: 10px;
+        }
+    }
+}

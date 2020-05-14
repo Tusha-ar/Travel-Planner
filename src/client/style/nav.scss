@@ -1,0 +1,33 @@
+nav{
+    margin-top: 3px;
+    color: wheat;
+    background-color: #443737;
+    padding: 10px 50px 8px 0px;
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-end;
+        li{
+            margin-left: 2em;
+            font-size: 18px;
+            height: 1.5em;
+            width: 4em;
+            padding: 5px 10px 0 10px;
+            text-align: center;
+            border: 2px solid wheat;
+            transition-duration: 0.7s;
+            &:hover{
+                border-color: #f57b51;
+                color: #f57b51;
+            }
+        }
+    }
+}
+
+
+@media(max-width:1025px){
+    nav{
+        padding: 5px 25px 4px 0px;
+    }
+}

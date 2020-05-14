@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    background-color: #fcbf1e;
+    margin-top: 3px;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'DM Mono', monospace;
+    a{
+        color: rebeccapurple;
+        text-decoration: none;
+    }
+}
