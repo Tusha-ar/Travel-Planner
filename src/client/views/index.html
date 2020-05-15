@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
         <title>Travel Planner</title>
     </head>
     <body>
@@ -30,6 +32,7 @@
             <form onsubmit="client.clickHandler(event)">
                 <span>You are going to <input type="text" placeholder="Destination" spellcheck="false" id="dest"></span>
                 <span>Departing <input type="date" id="date"></span>
+                <span>You will come back by <input type="date" id="back"></span>
                 <input type="submit" value="Get Details" id="button">
             </form>
             </div>
@@ -38,13 +41,16 @@
             <div class="content">
                 <h3>Trip Details</h3>
                 <span id="img"></span>
-                <p>Going to:<span id="destination"></span><br/>Days Left for trip:<span id="days"></span></p>
+                <p>Going to:<span id="destination"></span><br/>Days Left for trip:<span id="days"></span>
+                <br/>Trip is <span id="len"></span> days long</p>
                 <div class="weather_details">
                     <span id="temp"></span>
                     <span id="detail"></span>
                 </div>
             </div>
-            <button id="delete" onclick="client.del()">Delete</button>
+            <div class="bt">
+                <button id="delete" onclick="client.del()">Delete</button>
+                <button id="delete" onclick="window.print()">Print</button>
             </div>
         </div>
         <footer>

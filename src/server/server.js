@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
 const port = 8800;
-const path = require('path');
+//variable to hold the res
 data ={}
+
+//middleware
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
@@ -11,10 +13,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(express.static('dist'))
 
-app.get('/',(req, res)=>{
-    res.send('../../dist/index.html')
-})
+// app.get('/',(req, res)=>{
+//     res.send('../../dist/index.html')
+// })
 
+//if departure is in a week
 app.post('/current', (req, res)=>{
     data = {
         'temp' : req.body.temp,
@@ -24,6 +27,7 @@ app.post('/current', (req, res)=>{
     res.send(data)
 })
 
+//if departure is after on week
 app.post('/future', (req, res)=>{
     data = {
         'low_temp': req.body.low_temp,

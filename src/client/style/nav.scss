@@ -26,8 +26,20 @@ nav{
 }
 
 
-@media(max-width:1025px){
+@media screen and (max-width:1025px) and (min-width:500px) and (min-height:768px) {
     nav{
-        padding: 5px 25px 4px 0px;
+        display: none;
+    }
+}
+
+@media screen and (max-width:380px){
+    nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width:499px){
+    nav{
+        display: none;
     }
 }

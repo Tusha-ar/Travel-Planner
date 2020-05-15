@@ -22,15 +22,31 @@ header{
 }
 
 
-@media(max-width:1025px) and (min-width:500px){
+@media screen and (max-width:1025px) and (min-width:500px){
     header{
-        height: 30vh;
+        height: 20vh;
         background-size: contain;
         h1{
             font-size: 1.5em;
         }
         span{
             font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:499px){
+    header{
+        height: 30vh;
+        width: 130vw;
+        background-size: cover;
+        background-position: left;
+        margin-right: 0;
+        h1{
+            font-size: 1em;
+        }
+        span{
+            font-size: 0.7em;
         }
     }
 }
